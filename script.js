@@ -41,8 +41,10 @@ function failure() {
 
 function toggleDivs() {
     // console.log('class ran');
-    startPage.className = "hide";
-    mainPage.classList.remove('hide');
+    setTimeout(() => {
+        startPage.className = "hide";
+        mainPage.classList.remove('hide');
+    }, 2000);
 }
 
 
