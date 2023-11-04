@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/postOffice_favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main_page.css">
+    <title>Post-Offices Locator</title>
+  </head>
+  <body>
+    <section id="loading__page" class="" >
+      <div id="loading__page_heroSection" class="loading__page_sections">
+        <div>
+            <h1>Post Office Application.</h1>
+            <p>
+              This Application Allows you to extract information about the nearest
+              Post Offices, based on your location.
+            </p>
+        </div>
+        <img src="./assets/images/hero_section_img.svg" alt="hero_image">
+      </div>
+      <div id="loading__page_body" class="loading__page_sections">
+        <h1>Your Current IP Address is <span class="currentIp">127.0.01</span></h1>
+        <button id="getStrated" onclick="toggleDivs()">Get Started</button>
+      </div>
+    </section>
+    <main id="main__page" class="hide">
+        <header id="UserIp__details_section" class="main__page_section txt_general">
+            <p>IP Address: <span class="currentIp"> </span></p>
+            <div id="location__details_container">
+                <!-- <div>Lat: <span></span></div>
+                <div>Long: <span></span></div>
+                <div>Region: <span></span></div>
+                <div>City: <span></span></div>
+                <div>Hostname: <span></span></div>
+                <div>Organiztion: <span></span></div> -->
+            </div>
+        </header>
+        <section id="map__section" class="main__page_section" >
+            <h1>Your Current Location</h1>
+            <div id="mainMap_container">
+                
+            </div>
+        </section>
+        <section id="moreDetails__section" class="main__page_section txt_general">
+            <!-- <h1>More Information About You</h1>
+            <div >Time Zone: <span>${}</span></div>
+            <div >Date And Time: <span>${}</span></div>
+            <div >Pincode: <span></span>${}</div>
+            <div >Message: <span>${}</span></div> -->
+        </section>
+        <section id="postOfficesNear__section" class="main__page_section">
+            <h1>Post Offices Near You</h1>
+            <div id="searchPosts__container">
+                <label for="searchInput"><img src="./assets/icons/search_icon.svg" alt="search"></label>
+                <input type="text" id="searchInput" placeholder="Search By Name">
+            </div>
+            <div id="postOffice__LocationCards_container" class="main__page_section">
+                <!-- <div class="postOffice__card">
+                    <div id="PO_name">Name: </div>
+                    <div id="PO_type">Branch Type: </div>
+                    <div id="PO_status">Delivery Status: </div>
+                    <div id="PO_district">District: </div>
+                    <div id="PO_division">Division: </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="mainPage.js"></script>
+  </body>
+</html>

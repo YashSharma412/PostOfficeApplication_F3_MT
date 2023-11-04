@@ -1,0 +1,139 @@
+/* #main__page{
+    background-color: var(--primaryClrDark);
+} */
+
+.main__page_section{
+    width: 100%;
+    padding: 30px 4%;
+    padding-bottom: var(--spacing_y_md);
+}
+
+.main__page_section>h1{
+    /* align-self: center; */
+    text-align: center;
+    color: var(--txtClrBlr);
+    margin-bottom: 5px;
+}
+
+.txt_general{
+    color: rgba(184, 188, 204, 0.50);
+font-family: var(--fontFamilyDefault);
+font-size: var(--fs_lg);
+font-weight: 700;
+}
+
+
+#UserIp__details_section{
+    background-color: var(--primaryClrDark);
+}
+
+#UserIp__details_section>p{
+    margin-bottom: var(--spacing_y_sm);
+}
+
+#UserIp__details_section .currentIp{
+    color: var(--txtClrBlr);
+}
+
+#location__details_container{
+    display: grid;
+    gap: 5px 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#location__details_container > div span, #moreDetails__section span{
+    color: var(--txtClrBlr);
+} 
+
+#map__section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_y_sm);
+    align-items: center;
+    background-color: var(--secondaryClr);
+}
+
+#map__section > h1{
+    color: var(--txtClrBlr);
+    margin-bottom: 5px;
+}
+
+#mainMap_container{
+    width: 100%;
+    height: 70vmin;
+    max-height: 670px;
+    background-color: aqua;
+}
+
+#mainMap_container>iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#moreDetails__section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_y_sm);
+}
+
+#postOfficesNear__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing_y_sm);
+}
+
+#searchPosts__container{
+    width: 100%;
+    display: flex;
+    gap: var(--spacing_y_sm);
+    align-items: center;
+    border-radius: var(--border_radii_sm);
+    border: 3px solid var(--secondaryClr);
+    padding: 10px 20px;
+}
+
+#searchPosts__container>label{
+    margin-top: 5px;
+    width: fit-content;
+}
+
+#searchPosts__container>input{
+    flex-grow: 1;
+    height: 30px;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: var(--txtClrBlr);
+    font-size: var(--fs_md);
+    font-family: var(--fontFamilyHeading);
+}
+
+#postOffice__LocationCards_container{
+    display: grid;
+    gap: 24px 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.postOffice__card{
+    background-color: var(--secondaryClr);
+    color: var(--txtClrBlr);
+    font-size: var(--fs_lg);
+    font-weight: 700;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: var(--border_radii_sm);
+
+}
+
+
+
+
+@media screen and (max-width: 676px){
+    #location__details_container, 
+    #postOffice__LocationCards_container{
+        grid-template-columns: 1fr;
+    }
+}
